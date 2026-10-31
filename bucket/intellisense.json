@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "description": "Risk tiers and evidence gates for AI-assisted development",
+  "homepage": "https://github.com/soupler-oss/intellisense",
+  "license": "Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/soupler-oss/intellisense/releases/download/v1.0.0/intellisense_1.0.0_windows_amd64.zip",
+      "hash": "e9b715a11b5be9b0c47139b9793d2504df9e46fee6b41118c5c6485099e4a764",
+      "extract_dir": "intellisense_1.0.0_windows_amd64"
+    },
+    "arm64": {
+      "url": "https://github.com/soupler-oss/intellisense/releases/download/v1.0.0/intellisense_1.0.0_windows_arm64.zip",
+      "hash": "639464e75f5685c491d1bf3744564bf32425de4b1eb0c5afa1ff6d2a7dc9a322",
+      "extract_dir": "intellisense_1.0.0_windows_arm64"
+    }
+  },
+  "bin": "intellisense.exe",
+  "checkver": "github",
+  "autoupdate": {
+    "architecture": {
+      "64bit": { "url": "https://github.com/soupler-oss/intellisense/releases/download/v1.0.0/intellisense_$version_windows_amd64.zip" },
+      "arm64": { "url": "https://github.com/soupler-oss/intellisense/releases/download/v1.0.0/intellisense_$version_windows_arm64.zip" }
+    }
+  }
+}
